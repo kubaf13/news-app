@@ -1,0 +1,11 @@
+.description ul,
+ol {
+  list-style: none;
+  padding-left: 0em;
+}
+Card {
+  font-family: "Montserrat", sans-serif;
+}
+.Image {
+  height: 100px;
+}

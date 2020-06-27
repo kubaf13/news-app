@@ -1,0 +1,19 @@
+.NewsFiltersBar {
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.category {
+  padding-bottom: 1rem;
+  margin-right: 10px;
+}
+
+.input {
+  width: 15rem;
+  height: 60px;
+}
