@@ -1,17 +1,5 @@
 # News app
 
-## Table of contents
-
-- [General info](#general-info)
-- [Technologies](#technologies)
-- [Setup](#setup)
-
-## General info
-
-This project is an app, which fetch some news from different sources.
-You can choose a category of the news and search for the news by typing specific words.
-On Michael Jordan's page you can use sorting and change the date's scope.
-You can also change the language of the news.
 
 ## Technologies
 
