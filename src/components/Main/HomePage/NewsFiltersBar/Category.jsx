@@ -1,6 +1,6 @@
 import React from "react";
 import { Dropdown, Menu } from "semantic-ui-react";
-import "./CategoryDropdown.css";
+import "./Category.css";
 
 const options = [
   { key: 1, text: "General", value: "general" },
@@ -9,13 +9,13 @@ const options = [
   { key: 4, text: "Health", value: "health" },
   { key: 5, text: "Science", value: "science" },
   { key: 6, text: "Sports", value: "sports" },
-  { key: 7, text: "Technology", value: "technology" }
+  { key: 7, text: "Technology", value: "technology" },
 ];
 
-const CategoryDropdown = ({ onCategoryChange }) => (
+const Category = ({ onCategoryChange }) => (
   <Menu compact>
     <Dropdown
-      placeholder="Select category"
+      placeholder="Change Category"
       options={options}
       selection
       onChange={(event, data) => onCategoryChange(data.value)}
@@ -24,4 +24,4 @@ const CategoryDropdown = ({ onCategoryChange }) => (
   </Menu>
 );
 
-export default CategoryDropdown;
+export default Category;

@@ -1,12 +1,12 @@
 import React from "react";
-import CategoryDropdown from "./CategoryDropdown";
+import Category from "./Category";
 import "./NewsFiltersBar.css";
 import { Input } from "semantic-ui-react";
 
-const NewsFiltersBar = (props) => (
+const NewsFiltersBar = (onCategoryChange) => (
   <div className="NewsFiltersBar">
     <div className="category">
-      <CategoryDropdown onCategoryChange={props.onCategoryChange} />
+      <Category onCategoryChange={onCategoryChange} />
     </div>
     <div className="search">
       <Input
@@ -14,8 +14,8 @@ const NewsFiltersBar = (props) => (
         placeholder="Search..."
         onChange={(e) =>
           e.target.value.length > 2
-            ? props.onSearchQueryChange(e.target.value)
-            : props.onSearchQueryChange(null)
+            ? onCategoryChange.onSearchQueryChange(e.target.value)
+            : onCategoryChange.onSearchQueryChange(null)
         }
       />
     </div>

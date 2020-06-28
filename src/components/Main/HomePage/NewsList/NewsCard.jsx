@@ -15,7 +15,7 @@ const NewsCard = ({
     <Card.Content>
       <Card.Header>{title}</Card.Header>
       <Card.Meta>
-        <span>{publishedAt.replace("T", " ").split("Z")}</span>
+        <span>{publishedAt}</span>
       </Card.Meta>
       <Card.Description
         dangerouslySetInnerHTML={{ __html: description }}
@@ -24,7 +24,7 @@ const NewsCard = ({
     <Card.Content extra>
       <p>źródło: {author}</p>
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <Icon name="eye" />
+        <Icon name="caret square right outline" />
         Przeczytaj cały artukuł
       </a>
     </Card.Content>
